@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Perguntas e Respostas - Git</title>
+</head>
+
+<body>
+
+    <h2>1 - O que são operações de “Commit”, “Push” e “Pop” efetuadas num repositório?</h2>
+    <ul>
+        <li><span class="bold">Commit</span> - é o ato de guardar e registar no repositório local, as alterações
+            associadas e um respetivo comentário;</li>
+        <li><span class="bold">Push</span> - é o ato de enviar para o repositório remoto todas as alterações locais
+            previamente "commitadas";</li>
+        <li><span class="bold">Pop</span> - é o ato de recuperar código que havia sido guardado na stack de local <span
+                class="italic">stash</span>;</li>
+    </ul>
+
+    <h2>2 – Quais são as vantagens de usar Branchs num repositório git?</h2>
+    <p>As principais vantagens de usar branchs no Git são que poder <span class="underline">isolar o nosso código em
+            diferentes estágios</span> (ex: código pronto a produção num branch, e código em desenvolvimento noutro) e
+        assim trabalhar em paralelo com múltiplos intervenientes. Também permite correção de bugs diretamente num branch
+        que se encontre em produção. Outra utilização fundamental, na minha opinião, é a de submeter branchs isolados de
+        código a peer review, via <span class="italic">Pull Requests</span>, antes de os juntar à branch principal.</p>
+
+    <h2>3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem
+        ser resolvidos esses conflitos?</h2>
+    <p>Conflitos ocorrem quando a junção de duas partes do texto (ex: alterações locais (<span
+            class="italic">fonteA</span>) e um pedaço de código <span class="italic">stashed</span>(<span
+            class="italic">fonteB</span>)) indicam que a mesma parte do texto foi editada em cada uma das versões a
+        juntar. Nesse ponto o git indica a existência de um conflito, permitindo o utilizador indicar a sua resolução. A
+        resolução passa pelo utilizador indicar quais as partes da <span class="bold">fonteA</span> e <span
+            class="bold">fonteB</span> que serão mantidas e quais as que serão descartadas.</p>
+
+    <h2>4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?</h2>
+    <ol>
+        <li>O <span class="bold">clone</span> cria uma cópia local de um repositório remoto.</li>
+        <li>O <span class="bold">fork</span> cria uma cópia do mesmo repositório, sendo a diferença o local onde vai
+            ficar essa réplica do repositório.</li>
+    </ol>
+    <p>Assim sendo com um clone temos uma ligação ao repositório original e, caso tenhamos permissões de edição, podemos
+        por isso propor alterações ao mesmo, ao passo que o Fork já permite alterar o conteúdo que copiou na origem, sem
+        necessitar de permissões pois neste caso o repositório é seu, mas não submeter o mesmo no repositório de origem.
+    </p>
+
+</body>
+
+</html>
