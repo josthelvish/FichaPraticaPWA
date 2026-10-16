@@ -10,5 +10,8 @@ As principais vantagens de usar branchs no Git são que poder isolar o nosso có
 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
+
+Conflitos ocorrem quando a junção de duas partes do texto (ex: alterações locais (fonteA) e um pedaço de código stashed(fonteB)) indicam que a mesma parte do texto foi editada em cada uma das versões a juntar. Nesse ponto o git indica a existência de um conflito, permitindo o utilizador indicar a sua resolução. A resolução passa pelo utilizador indicar quais as partes da fonteA e fonteB que serão mantidas e quais as que serão descartadas.
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
