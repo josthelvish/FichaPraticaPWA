@@ -15,3 +15,6 @@ Conflitos ocorrem quando a junção de duas partes do texto (ex: alterações lo
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
+
+O clone cria um cópia local de um repositório remoto e o fork cria uma cópia do mesmo repositório, sendo a diferença o local onde vai ficar essa réplica do repositório.
+Assim sendo com um clone temos uma ligação ao repositório original e, caso tenhamos permissões de edição, podemos por isso propor alterações ao mesmo, ao passo que o Fork já permite alterar o conteudo que copiou na origem, sem necessitar de permissões pois neste caso o repositório é seu, mas não submeter o mesmo no repositório de origem .
